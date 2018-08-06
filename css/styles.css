@@ -12,7 +12,7 @@ main {
 }
 
 header {
-    width: 1124px;
+   /* width: 1124px; */
     height: 72px;
     background: #FFFFFF;
 }
@@ -24,11 +24,8 @@ header {
 
 .row {
     display: flex;
+    /** Перенос строки **/
     flex-wrap: wrap;
-}
-
-.row > div {
-    padding-top: 30px;
 }
 
 .col-3 {
@@ -41,9 +38,19 @@ header {
     border: black solid 1px;
 }
 
-.header-logo img { 
-    display: block;
- }
+.header-logo {
+    height: 72px;
+    position: relative;
+}
+
+.header-logo img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
 
 .header-location {
     display: flex;
@@ -63,6 +70,7 @@ header {
 }
 
 .header-location__to {
+    margin-left: 9px;
     margin-right: 9px;
     font-size: 16px;
     color: #626262;
