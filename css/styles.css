@@ -12,7 +12,7 @@ main {
 }
 
 header {
-    /* width: 1124px; */
+    margin: 0px auto;
     height: 72px;
     background: #FFFFFF;
     border: black solid 1px;
@@ -35,6 +35,8 @@ header {
 .col-4 { 
     flex-basis: 33.3332%;
     box-sizing: border-box;
+    padding-left: 6px;
+    padding-right: 6px;
  }
 
 .col-6 { flex-basis: 49.9999% }
@@ -111,6 +113,7 @@ header {
 }
 
 .header-login {
+    margin-right: 97px;
     text-align: center;
     line-height: 72px;
 }
@@ -154,7 +157,7 @@ header {
     margin-right: 87px;
     /* Цвет линии для IE6-7 */
     height: 1px;
-    width: 1190px;
+    width: 1150px;
 }
 
 .main-caption {
@@ -166,13 +169,22 @@ header {
 }
 
 .container {
-    margin-left: 81px;
+    margin: 0px auto;
 }
 
 .card {
     margin-top: 16px;
 }
 
+.card ul {
+    padding: 0;
+}
+
 .card li {
     display: inline;
+    /* float: left; */
+}
+
+.restaurants-block {
+    margin-left: 81px;
 }
