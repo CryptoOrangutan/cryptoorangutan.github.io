@@ -39,28 +39,37 @@
                 </div>
 
                 <div class="col-3">
+                    <!-- Header login block-->
                     <div class="header-login">
                         <button class="button-sign-in">Sign in</button>
                         <button class="button-register">Register</button>
                         <i class="fas fa-shopping-basket"></i>
                     </div>
+                    <!-- /Header login block -->
                 </div>
 
             </div>
         </header>
 
         <div class="container">
-            <!-- Search block-->
-            <div class="main-search">
-                <i class="fas fa-search"></i>
-                <input type="search" placeholder="Search for restaurant or cuisine">
-                <hr align="left">
-            </div>
-            <!-- /Search location block -->
             <div class="restaurants-block">
-                <p class="main-caption">Moscow restaurants</p>
-                <div class="row">
 
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Search block-->
+                        <div class="main-search">
+                            <i class="fas fa-search"></i>
+                            <input type="search" placeholder="Search for restaurant or cuisine">
+                            <hr align="left">
+                        </div>
+                        <!-- /Search location block -->
+                    </div>
+                </div>
+
+                <!-- TODO: Will need add list markers -->
+
+                <p class="col-4 main-caption">Moscow restaurants</p>
+                <div class="row">
                     <div class="col-4">
                         <div class="card">
                             <img src="./images/1.jpg">
@@ -178,10 +187,88 @@
                 </div>
             </div>
         </div>
-    </main>
-    <footer>
 
-    </footer>
+        <footer>
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col-4 footer-logo">
+                        <b class="footer-logo__uber">UBER</b>
+                        <p class="footer-logo__eats">EATS</p>
+                    </div>
+
+                    <div class="col-12">
+                        <hr class="first-footer-hr" align="left">
+                    </div>
+
+                    <div class="col-4">
+                        <div class="footer-first-block">
+                            <select class="footer-first-block_language">
+                                <option>English</option>
+                                <option>Russian</option>
+                            </select>
+                            <div class="footer-first-block_hashtag">
+                                <p>
+                                    <span>#</span>UberEats</p>
+                            </div>
+                            <i class="fab fa-facebook fa-lg"></i>
+                            <i class="fab fa-twitter fa-lg"></i>
+                            <i class="fas fa-circle fa-lg"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="footer-second-block">
+                            <a href="#">About UberEats</a>
+                            <a href="#">Become a Delivery Partner</a>
+                            <a href="#">Become a Restaurant Partner</a>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="footer-third-block">
+                            <a href="#">See all cities</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">Help</a>
+                            <a href="#">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <hr class="second-footer-hr" align="left">
+                </div>
+
+                <div class="col-4">
+                    <div class="mobile-app-block">
+                        <a href="#">
+                            <img src="./images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png">
+                        </a>
+                        <a href="#">
+                            <img src="./images/en_badge_web_generic-cf6dad406f.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <hr class="third-footer-hr" align="left">
+                </div>
+
+                <div class="row">
+                    <div class="col-4 bottom-link">
+                        <p>© 2017 Uber Technologies Inc.</p>
+                    </div>
+                    <div class="col-4 bottom-link">
+                        <p>Privacy</p>
+                    </div>
+                    <div class="col-4 bottom-link">
+                        <p>Terms</p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
 </body>
 
 </html>
