@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/restaurant.css">
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Uber Eats</title>
+    <title>Restaurant</title>
 </head>
 
 <body>
@@ -45,7 +45,7 @@
                         <div class="header-login">
                             <button class="button-sign-in">Sign in</button>
                             <button class="button-register">Register</button>
-                            <i class="fas fa-shopping-bag"></i>
+                            <i class="fas fa-shopping-bag fa-lg"></i>
                         </div>
                         <!-- /Header login block -->
                     </div>
@@ -53,139 +53,83 @@
                 </div>
             </header>
 
-            <div class="main-container">
-                <div class="restaurants-block">
+            <div class="row">
+                <div class="col-12">
+                    <div class="slider">
+                        <div class="top-restaurant">
+                            <h1 class="top-restaurant__head">Трактир «Пушкин»</h1>
+                            <ul>
+                                <li>₽₽₽</li>
+                                <li>Европейская</li>
+                                <div class="top-restaurant__delivery">40-50 Min</div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-12">
-                            <!-- Search block-->
-                            <div class="main-search">
-                                <i class="fas fa-search"></i>
-                                <input type="search" placeholder="Search for restaurant or cuisine">
-                                <hr align="left">
-                            </div>
-                            <!-- /Search location block -->
+                <div class="main-navigation">
+                    <ul>
+                        <li><a href="#">Закуски</a></li>
+                        <li><a href="#">Салаты</a></li>
+                        <li><a href="#">Супы</a></li>
+                        <li><a href="#">Горячие блюда</a></li>
+                        <li><a href="#">Гарниры</a></li>
+                        <li><a href="#">Десерты</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <p class="main-caption">Закуски</p>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="catalog-dishes">
+                            <p>Сельдь на бородинском хлебе</p>
+                            <p id="dishes-description">С яйцом и огурцом</p>
+                            <p class="catalog-dishes__price">240 ₽</p>
+                            <img src="./images/z1.jpg">
                         </div>
                     </div>
 
-                    <!-- TODO: Will need add list markers -->
-
-                    <p class="col-4 main-caption">Moscow restaurants</p>
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="card">
-                                <img src="./images/1.jpg">
-                                <h4>Макдоналдс - газетный</h4>
-                                <ul>
-                                    <li>₽₽</li>
-                                    <li>Бургеры</li>
-                                    <li>Burgers</li>
-                                </ul>
-                                <p>25-35 Min</p>
-                            </div>
+                    <div class="col-6">
+                        <div class="catalog-dishes">
+                            <p>Соленья ассорти</p>
+                            <p class="catalog-dishes__price">320 ₽</p>
+                            <img src="./images/z2.jpg">
                         </div>
+                    </div>
 
-                        <div class="col-4">
-                            <div class="card">
-                                <img src="./images/2.jpg">
-                                <h4>DimSum & Co - ЦДМ</h4>
-                                <ul>
-                                    <li>₽</li>
-                                    <li>Японская</li>
-                                    <li>Китайская</li>
-                                    <li>Азиатская</li>
-                                </ul>
-                                <p>40-50 Min</p>
-                            </div>
+                    <div class="col-6">
+                        <div class="catalog-dishes">
+                            <p>Грибы маринованные</p>
+                            <p class="catalog-dishes__price">300 ₽</p>
+                            <img src="./images/z3.jpg">
                         </div>
+                    </div>
 
-                        <div class="col-4">
-                            <div class="card">
-                                <img src="./images/3.png">
-                                <h4>ДвижОК - Манежная</h4>
-                                <ul>
-                                    <li>₽</li>
-                                    <li>Американская</li>
-                                    <li>Европейская</li>
-                                </ul>
-                                <p>35-45 Min</p>
-                            </div>
+                    <div class="col-6">
+                        <div class="catalog-dishes">
+                            <p>Сало домашнее с горчицей</p>
+                            <p class="catalog-dishes__price">320 ₽</p>
+                            <img src="./images/z4.jpg">
                         </div>
+                    </div>
 
-                        <div class="col-4">
-                            <div class="card">
-                                <img src="./images/4.jpg">
-                                <h4>НЯ - NHA</h4>
-                                <ul>
-                                    <li>₽₽</li>
-                                    <li>Въетнамская</li>
-                                </ul>
-                                <p>30-40 Min</p>
-                            </div>
+                    <div class="col-6">
+                        <div class="catalog-dishes">
+                            <p>Малосольная семга</p>
+                            <p class="catalog-dishes__price">390 ₽</p>
+                            <img src="./images/z5.jpg">
                         </div>
+                    </div>
 
-                        <div class="col-4">
-                            <div class="card">
-                                <img src="./images/5.jpg">
-                                <h4>Точка Дзы - Цветной</h4>
-                                <ul>
-                                    <li>₽₽</li>
-                                    <li>Въетнамская</li>
-                                </ul>
-                                <p>40-50 Min</p>
-                            </div>
+                    <div class="col-6">
+                        <div class="catalog-dishes">
+                            <p>Язык говяжий с хреном</p>
+                            <p class="catalog-dishes__price">350 ₽</p>
+                            <img src="./images/z6.jpg">
                         </div>
-
-                        <div class="col-4">
-                            <div class="card">
-                                <img src="./images/6.jpg">
-                                <h4>Cinnabon</h4>
-                                <ul>
-                                    <li>₽</li>
-                                    <li>Выпечка</li>
-                                    <li>Десерты</li>
-                                    <li>Капкейки</li>
-                                </ul>
-                                <p>25-35 Min</p>
-                            </div>
-                        </div>
-
-                        <div class="col-4">
-                            <div class="card">
-                                <img src="./images/7.jpg">
-                                <h4>PIZZELOVE</h4>
-                                <ul>
-                                    <li>₽₽</li>
-                                    <li>Пицца</li>
-                                </ul>
-                                <p>15-25 Min</p>
-                            </div>
-                        </div>
-
-                        <div class="col-4">
-                            <div class="card">
-                                <img src="./images/8.jpg">
-                                <h4>Zю кафе - Тверская</h4>
-                                <ul>
-                                    <li>₽₽</li>
-                                    <li>Японская</li>
-                                </ul>
-                                <p>25-35 Min</p>
-                            </div>
-                        </div>
-
-                        <div class="col-4">
-                            <div class="card">
-                                <img src="./images/9.jpg">
-                                <h4>Bar BQ Cafe - Манежная</h4>
-                                <ul>
-                                    <li>₽₽₽</li>
-                                    <li>Европейская</li>
-                                </ul>
-                                <p>30-40 Min</p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -269,7 +213,6 @@
 
                 </div>
             </footer>
-
         </main>
     </div>
 </body>

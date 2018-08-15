@@ -6,70 +6,75 @@ html {
     box-sizing: inherit;
 }
 
-.center { 
-    width: 1300px;
-    margin: 0 auto;
- }
+.center {
+    width: 1324px;
+    margin: 0;
+    padding: 10px;
+}
 
 body {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
 }
 
 main {
-    margin-left: 81px;
     background-color: #FFFFFF;
+    margin-left: 81px;
 }
 
 header {
     height: 72px;
     background: #FFFFFF;
-    border: rgba(38, 38, 38, 0.16) solid 1px;
-    box-shadow: 0 0 1em rgba(38, 38, 38, 0.16);
 }
 
 .row {
     display: flex;
-    flex-wrap: wrap; /** Transference line **/
+    flex-wrap: wrap;
+    /** Transference line **/
     align-items: center;
     justify-content: flex-start;
 }
 
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     box-sizing: border-box;
 }
 
-.col-1 { flex-basis: 8.3333% }
+.col-1 {
+    flex-basis: 8.3333%
+}
 
-.col-2 { flex-basis: 16.6667% }
+.col-2 {
+    flex-basis: 16.6667%
+}
 
-.col-3 { flex-basis: 24.9999% }
+.col-3 {
+    flex-basis: 24.9999%
+}
 
-.col-4 { 
+.col-4 {
     flex-basis: 33.3332%;
     padding-left: 6px;
     padding-right: 6px;
- }
+}
 
-.col-6 { flex-basis: 49.9999% }
+.col-6 {
+    flex-basis: 49.9999%;
+}
 
-.col-7 { flex-basis: 58,3332% }
+.col-7 {
+    flex-basis: 58, 3332%
+}
 
-.col-8 { flex-basis: 66,6664% }
+.col-8 {
+    flex-basis: 66, 6664%
+}
 
-.col-9 { flex-basis: 74,9996% }
+.col-9 {
+    flex-basis: 74, 9996%
+}
 
-.col-12 { flex-basis: 100% }
+.col-12 {
+    flex-basis: 100%
+}
 
 /** Header **/
 
@@ -165,30 +170,99 @@ header {
     font-size: 13px;
 }
 
-/** Main **/
+/** Slider **/
 
-.main-search {
-    margin-top: 111px;
+.slider {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background-size: cover;
+    background-image: url(../images/d42ea9bbf7aff297c2e1eb5e5f3b7fa6-w1080-87.jpg);
+    background-repeat: no-repeat;
 }
 
-.main-search input {
+.top-restaurant {
+    position: absolute;
+    left: 81px;
+    top: 80px;
+    width: 389px;
+    height: 204px;
+    background-color: #FFFFFF;
+    border: black solid 1px;
+}
+
+.top-restaurant__head {
+    line-height: 42px;
     text-align: center;
-    width: 223px;
-    height: 24px;
-    line-height: 24px;
-    opacity: 50%;
-    outline: none;
+}
+
+.top-restaurant ul {
+    padding-top: 62px;
+    padding-left: 10px;
+    margin-left: 38px;
+}
+
+.top-restaurant li:first-child {
+    list-style-type: none;
+}
+
+.top-restaurant li:nth-child(2) {
+    margin-left: 20px;
+}
+
+.top-restaurant li {
+    float: left;
+}
+
+.top-restaurant__delivery {
+    float: right;
+    margin-right: 32px;
+    margin-bottom: 5px;
+    display: inline-flex;
+    width: 97px;
+    height: 32px;
+    border-radius: 15px;
+    background-color: #1D1D1D;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/** Main **/
+
+.main-navigation {
+    display: flex;
+    align-items: center; 
+    width: 100%;
+    height: 80px;
+    border: rgba(117, 117, 117, 0.2) solid 1px;
+}
+
+.main-navigation ul { 
+    margin-left: 81px;
+    padding-left: 0;
+}
+
+.main-navigation li {
+    padding-right: 29px;
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.main-navigation a {
+    line-height: 19px;
+    font-size: 16px;
+    text-decoration: none;
     color: #626262;
 }
 
-.main-search hr {
-    border: none;
-    background-color: #757575;
-    color: #757575;
-    margin-right: 87px;
-    /* Цвет линии для IE6-7 */
-    height: 1px;
-    width: 1060px;
+.main-navigation a:hover { color: #327430; }
+
+.main-content {
+    width: 100%;
+    padding-left: 81px;
 }
 
 .main-caption {
@@ -198,30 +272,39 @@ header {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
+.catalog-dishes {
+    width: 500px;
+    height: 160px;
+    margin-top: 49px;
+    font-size: 16px;
+    border: black solid 1px;
+    position: relative;
 }
 
-.card {
-    margin-top: 16px;
+.catalog-dishes p {
+    color: #1D1D1D;
+    padding-left: 16px;
 }
 
-.card ul {
-    padding: 0;
+#dishes-description {
+    font-size: 13px;
+    color: #626262;
 }
 
-.card ul:first-child {
-    list-style-type: none;
-    padding-left: 0;
+.catalog-dishes__price {
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    line-height: 21px;
 }
 
-.card li {
-    display: inline-block;
-}
-
-.restaurants-block {
-    margin-left: 81px;
+.catalog-dishes img {
+    width: 170px;
+    height: 160px;
+    padding: 1px 1px 1px 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 /** Footer **/
@@ -229,6 +312,7 @@ header {
 footer {
     margin-top: 80px;
     height: 100%;
+    width: 100%;
     background-color: #262626;
 }
 
