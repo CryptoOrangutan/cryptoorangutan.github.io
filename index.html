@@ -15,40 +15,35 @@
     <div class="center">
         <main>
             <header>
-                <div class="row">
+                <div class="header-container">
+                    <!-- Header logo block-->
+                    <div class="header-logo">
+                        <img src="./images/logo.png">
+                    </div>
+                    <!-- /Header logo block -->
 
-                    <div class="col-3">
-                        <div class="header-logo">
-                            <img src="./images/logo.png">
+                    <!-- Header location block-->
+                    <div class="header-location">
+                        <div class="header-location__asap">
+                            ASAP
+                        </div>
+                        <div class="header-location__to">
+                            to
+                        </div>
+                        <div class="header-location__address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" placeholder="ul. Bolshaya Dmitrovka, 22">
                         </div>
                     </div>
+                    <!-- /Header location block -->
 
-                    <div class="col-6">
-                        <!-- Header location block-->
-                        <div class="header-location">
-                            <div class="header-location__asap">
-                                ASAP
-                            </div>
-                            <div class="header-location__to">
-                                to
-                            </div>
-                            <div class="header-location__address">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <input type="text" placeholder="ul. Bolshaya Dmitrovka, 22">
-                            </div>
-                        </div>
-                        <!-- /Header location block -->
+                    <!-- Header login block-->
+                    <div class="header-login">
+                        <button class="button-sign-in">Sign in</button>
+                        <button class="button-register">Register</button>
+                        <i class="fas fa-shopping-bag"></i>
                     </div>
-
-                    <div class="col-3">
-                        <!-- Header login block-->
-                        <div class="header-login">
-                            <button class="button-sign-in">Sign in</button>
-                            <button class="button-register">Register</button>
-                            <i class="fas fa-shopping-bag"></i>
-                        </div>
-                        <!-- /Header login block -->
-                    </div>
+                    <!-- /Header login block -->
 
                 </div>
             </header>
@@ -70,7 +65,9 @@
 
                     <!-- TODO: Will need add list markers -->
 
-                    <p class="col-4 main-caption">Moscow restaurants</p>
+                    <a href="restaurant.html" target="_blank" title="Трактир «Пушкин»">
+                        <p class="col-4 main-caption">Moscow restaurants</p>
+                    </a>
                     <div class="row">
                         <div class="col-4">
                             <div class="card">
