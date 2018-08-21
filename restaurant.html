@@ -12,50 +12,44 @@
 </head>
 
 <body>
-    <div class="center">
-        <main>
-            <header>
-                <div class="row">
+    <header>
+        <div class="header-container">
+            <!-- Header logo block-->
+            <div class="header-logo">
+                <img src="./images/logo.png">
+            </div>
+            <!-- /Header logo block -->
 
-                    <div class="col-3">
-                        <div class="header-logo">
-                            <img src="./images/logo.png">
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <!-- Header location block-->
-                        <div class="header-location">
-                            <div class="header-location__asap">
-                                ASAP
-                            </div>
-                            <div class="header-location__to">
-                                to
-                            </div>
-                            <div class="header-location__address">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <input type="text" placeholder="ul. Bolshaya Dmitrovka, 22">
-                            </div>
-                        </div>
-                        <!-- /Header location block -->
-                    </div>
-
-                    <div class="col-3">
-                        <!-- Header login block-->
-                        <div class="header-login">
-                            <button class="button-sign-in">Sign in</button>
-                            <button class="button-register">Register</button>
-                            <i class="fas fa-shopping-bag fa-lg"></i>
-                        </div>
-                        <!-- /Header login block -->
-                    </div>
-
+            <!-- Header location block-->
+            <div class="header-location">
+                <div class="header-location__asap">
+                    ASAP
                 </div>
-            </header>
+                <div class="header-location__to">
+                    to
+                </div>
+                <div class="header-location__address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="ul. Bolshaya Dmitrovka, 22">
+                </div>
+            </div>
+            <!-- /Header location block -->
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="slider">
+            <!-- Header login block-->
+            <div class="header-login">
+                <button class="button-sign-in">Sign in</button>
+                <button class="button-register">Register</button>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+            <!-- /Header login block -->
+        </div>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="col-12">
+                <div class="slider">
+                    <div class="main-container">
                         <div class="top-restaurant">
                             <h1 class="top-restaurant__head">Трактир «Пушкин»</h1>
                             <ul>
@@ -66,22 +60,26 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="main-navigation">
-                    <ul>
-                        <li><a href="#">Закуски</a></li>
-                        <li><a href="#">Салаты</a></li>
-                        <li><a href="#">Супы</a></li>
-                        <li><a href="#">Горячие блюда</a></li>
-                        <li><a href="#">Гарниры</a></li>
-                        <li><a href="#">Десерты</a></li>
-                    </ul>
-                </div>
             </div>
+        </div>
 
+
+        <div class="main-navigation">
+            <div class="main-container">
+                <ul>
+                    <li><a href="#">Закуски</a></li>
+                    <li><a href="#">Салаты</a></li>
+                    <li><a href="#">Супы</a></li>
+                    <li><a href="#">Горячие блюда</a></li>
+                    <li><a href="#">Гарниры</a></li>
+                    <li><a href="#">Десерты</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-container">
             <div class="main-content">
                 <p class="main-caption">Закуски</p>
-
                 <div class="row">
                     <div class="col-6">
                         <div class="catalog-dishes">
@@ -133,88 +131,88 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <footer>
-                <div class="footer-container">
-                    <div class="row">
-                        <div class="col-4 footer-logo">
-                            <b class="footer-logo__uber">UBER</b>
-                            <p class="footer-logo__eats">EATS</p>
-                        </div>
-
-                        <div class="col-12">
-                            <hr class="first-footer-hr" align="left">
-                        </div>
-
-                        <div class="col-4">
-                            <div class="footer-first-block">
-                                <select class="footer-first-block_language">
-                                    <option>English</option>
-                                    <option>Russian</option>
-                                </select>
-                                <div class="footer-first-block_hashtag">
-                                    <p>
-                                        <span>#</span>UberEats</p>
-                                </div>
-                                <i class="fab fa-facebook fa-lg"></i>
-                                <i class="fab fa-twitter fa-lg"></i>
-                                <i class="fab fa-instagram fa-lg"></i>
-                            </div>
-                        </div>
-
-                        <div class="col-4">
-                            <div class="footer-second-block">
-                                <a href="#">About UberEats</a>
-                                <a href="#">Become a Delivery Partner</a>
-                                <a href="#">Become a Restaurant Partner</a>
-                            </div>
-                        </div>
-
-                        <div class="col-4">
-                            <div class="footer-third-block">
-                                <a href="#">See all cities</a>
-                                <a href="#">Pricing</a>
-                                <a href="#">Help</a>
-                                <a href="#">FAQs</a>
-                            </div>
-                        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col-4 footer-logo">
+                        <b class="footer-logo__uber">UBER</b>
+                        <p class="footer-logo__eats">EATS</p>
                     </div>
 
                     <div class="col-12">
-                        <hr class="second-footer-hr" align="left">
+                        <hr class="first-footer-hr" align="left">
                     </div>
 
                     <div class="col-4">
-                        <div class="mobile-app-block">
-                            <a href="#">
-                                <img src="./images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png">
-                            </a>
-                            <a href="#">
-                                <img src="./images/en_badge_web_generic-cf6dad406f.png">
-                            </a>
+                        <div class="footer-first-block">
+                            <select class="footer-first-block_language">
+                                <option>English</option>
+                                <option>Russian</option>
+                            </select>
+                            <div class="footer-first-block_hashtag">
+                                <p>
+                                    <span>#</span>UberEats</p>
+                            </div>
+                            <i class="fab fa-facebook fa-lg"></i>
+                            <i class="fab fa-twitter fa-lg"></i>
+                            <i class="fab fa-instagram fa-lg"></i>
                         </div>
                     </div>
 
-                    <div class="col-12">
-                        <hr class="third-footer-hr" align="left">
-                    </div>
-
-                    <div class="row">
-                        <div class="col-4 bottom-link">
-                            <p>© 2017 Uber Technologies Inc.</p>
-                        </div>
-                        <div class="col-4 bottom-link">
-                            <p>Privacy</p>
-                        </div>
-                        <div class="col-4 bottom-link">
-                            <p>Terms</p>
+                    <div class="col-4">
+                        <div class="footer-second-block">
+                            <a href="#">About UberEats</a>
+                            <a href="#">Become a Delivery Partner</a>
+                            <a href="#">Become a Restaurant Partner</a>
                         </div>
                     </div>
 
+                    <div class="col-4">
+                        <div class="footer-third-block">
+                            <a href="#">See all cities</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">Help</a>
+                            <a href="#">FAQs</a>
+                        </div>
+                    </div>
                 </div>
-            </footer>
-        </main>
-    </div>
+
+                <div class="col-12">
+                    <hr class="second-footer-hr" align="left">
+                </div>
+
+                <div class="col-4">
+                    <div class="mobile-app-block">
+                        <a href="#">
+                            <img src="./images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png">
+                        </a>
+                        <a href="#">
+                            <img src="./images/en_badge_web_generic-cf6dad406f.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <hr class="third-footer-hr" align="left">
+                </div>
+
+                <div class="row">
+                    <div class="col-4 bottom-link">
+                        <p>© 2017 Uber Technologies Inc.</p>
+                    </div>
+                    <div class="col-4 bottom-link">
+                        <p>Privacy</p>
+                    </div>
+                    <div class="col-4 bottom-link">
+                        <p>Terms</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </main>
 </body>
 
 </html>

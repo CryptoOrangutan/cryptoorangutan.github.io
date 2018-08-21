@@ -6,30 +6,22 @@ html {
     box-sizing: inherit;
 }
 
-.center {
-    width: 1324px;
-    margin: 0;
-    padding: 10px;
-}
-
 body {
     background-color: #f2f2f2;
 }
 
 main {
     background-color: #FFFFFF;
-    margin-left: 81px;
 }
 
 header {
-    height: 72px;
     background: #FFFFFF;
+    box-shadow: 0 0 1em rgba(38, 38, 38, 0.16);
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    /** Transference line **/
     align-items: center;
     justify-content: flex-start;
 }
@@ -57,6 +49,7 @@ header {
 }
 
 .col-6 {
+    padding-right: 16px;
     flex-basis: 49.9999%;
 }
 
@@ -76,61 +69,54 @@ header {
     flex-basis: 100%
 }
 
-/** Header **/
+/**--------Header--------**/
 
-.logo {
-    padding-top: 30px;
-    padding-bottom: 29px;
+.header-container {
+    margin: 0 auto;
+    padding: 16px 0;
+    width: 1130px;
 }
+
+/* Header logo block */
 
 .header-logo {
-    height: 72px;
-    position: relative;
+    display: inline-block;
+    margin-right: 117px;
 }
 
-.header-logo img {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-}
+/* Header location block */
 
 .header-location {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 72px;
+    display: inline-block;
 }
 
 .header-location__asap {
+    display: inline-block;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-size: 16px;
     border: #E0E0E0 solid 1px;
     padding: 8px 12px;
-    width: 65px;
-    height: 40px;
     line-height: 24px;
     text-align: center;
 }
 
 .header-location__to {
-    margin-left: 9px;
+    display: inline-block;
     margin-right: 9px;
     font-size: 16px;
     color: #626262;
 }
 
 .header-location__address {
+    display: inline-block;
     position: relative;
 }
 
 .header-location__address .fa-map-marker-alt {
     position: absolute;
-    top: 28px;
-    left: 12px;
+    top: 13px;
+    left: 14px;
 }
 
 .header-location__address input {
@@ -140,17 +126,19 @@ header {
     font-size: 16px;
     width: 292px;
     height: 40px;
-    text-align: center;
+    padding-left: 35px;
 }
 
 .header-location__address input[type="text"]::placeholder {
     color: #1D1D1D;
 }
 
+/* Header login block */
+
 .header-login {
-    margin-right: 97px;
-    text-align: center;
-    line-height: 72px;
+    display: inline-block;
+    height: 100%;
+    float: right;
 }
 
 .button-sign-in {
@@ -173,8 +161,7 @@ header {
 /** Slider **/
 
 .slider {
-    position: relative;
-    width: 100%;
+    min-width: 1000px;
     height: 360px;
     background-size: cover;
     background-image: url(../images/d42ea9bbf7aff297c2e1eb5e5f3b7fa6-w1080-87.jpg);
@@ -183,10 +170,9 @@ header {
 
 .top-restaurant {
     position: absolute;
-    left: 81px;
-    top: 80px;
     width: 389px;
     height: 204px;
+    top: 80px;
     background-color: #FFFFFF;
     border: black solid 1px;
 }
@@ -230,7 +216,13 @@ header {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/** Main **/
+/** Main navigation **/
+
+.main-container {
+    position: relative;
+    margin: 0 auto;
+    width: 1130px;
+}
 
 .main-navigation {
     display: flex;
@@ -241,7 +233,6 @@ header {
 }
 
 .main-navigation ul { 
-    margin-left: 81px;
     padding-left: 0;
 }
 
@@ -260,9 +251,10 @@ header {
 
 .main-navigation a:hover { color: #327430; }
 
+/** Main content **/
+
 .main-content {
     width: 100%;
-    padding-left: 81px;
 }
 
 .main-caption {
@@ -273,8 +265,7 @@ header {
 }
 
 .catalog-dishes {
-    width: 500px;
-    height: 160px;
+    height: 160px; /** TODO:Need fix **/
     margin-top: 49px;
     font-size: 16px;
     border: black solid 1px;
@@ -312,12 +303,12 @@ header {
 footer {
     margin-top: 80px;
     height: 100%;
-    width: 100%;
     background-color: #262626;
 }
 
 .footer-container {
-    margin-left: 81px;
+    margin: 0 auto;
+    width: 1130px;
 }
 
 .footer-logo {
@@ -340,9 +331,8 @@ footer {
     border: none;
     background-color: #FFFFFF;
     color: #FFFFFF;
-    margin-right: 87px;
     height: 1px;
-    width: 1150px;
+    width: 100%;
 }
 
 footer select {
@@ -390,9 +380,8 @@ footer a:last-child { padding-bottom: 0; }
     margin-top: 39px;
 }
 
-/** TODO: Change border icon color **/
 footer i {
-    color: #FFFFFF;
+    color: #FFFFFF; /** TODO: Change border icon color **/
     margin-top: 20px;
     padding-right: 20px;
 }
@@ -402,9 +391,8 @@ footer i {
     background-color: #FFFFFF;
     color: #FFFFFF;
     margin-top: 48px;
-    margin-right: 87px;
     height: 1px;
-    width: 1150px;
+    width: 100%;
 }
 
 .mobile-app-block {
@@ -420,9 +408,8 @@ footer i {
     border: none;
     background-color: #FFFFFF;
     color: #FFFFFF;
-    margin-right: 87px;
     height: 1px;
-    width: 1150px;
+    width: 100%;
 }
 
 .bottom-link {

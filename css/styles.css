@@ -8,24 +8,16 @@ html {
 
 a { text-decoration: none; }
 
-.center { 
-    width: 1300px;
-    margin: 0 auto;
- }
-
 body {
     background-color: #F2F2F2;
 }
 
 main {
-    margin-left: 81px;
     background-color: #FFFFFF;
 }
 
 header {
-    /**height: 72px;**/
     background: #FFFFFF;
-    border: rgba(38, 38, 38, 0.16) solid 1px;
     box-shadow: 0 0 1em rgba(38, 38, 38, 0.16);
 }
 
@@ -76,37 +68,22 @@ header {
 /**--------Header--------**/
 
 .header-container {
-    position: relative;
-    margin-left: 82px;
-    margin-right: 87px;
-    border: #1D1D1D solid 2px;
-    height: 72px;
+    margin: 0 auto;
+    padding: 16px 0;
+    width: 1130px;
 }
 
 /* Header logo block */
 
 .header-logo {
-    height: 100%;
     display: inline-block;
-    position: relative;
-}
-
-.header-logo img {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    margin-right: 117px;
 }
 
 /* Header location block */
 
 .header-location {
-    height: 100%;
     display: inline-block;
-    margin-left: 242px;
-    border: #1D1D1D solid 1px;
 }
 
 .header-location__asap {
@@ -122,21 +99,20 @@ header {
 
 .header-location__to {
     display: inline-block;
-    margin-left: 9px;
+    margin-right: 9px;
     font-size: 16px;
     color: #626262;
 }
 
 .header-location__address {
     display: inline-block;
-    margin-left: 9px;
     position: relative;
 }
 
 .header-location__address .fa-map-marker-alt {
     position: absolute;
     top: 13px;
-    left: 20px;
+    left: 14px;
 }
 
 .header-location__address input {
@@ -146,7 +122,7 @@ header {
     font-size: 16px;
     width: 292px;
     height: 40px;
-    text-align: center;
+    padding-left: 35px;
 }
 
 .header-location__address input[type="text"]::placeholder {
@@ -158,9 +134,8 @@ header {
 .header-login {
     display: inline-block;
     height: 100%;
-    float: right; /** Должен быть в правом краю блока .header-container **/
-    text-align: center;
-    border: #1D1D1D solid 1px;
+    float: right;
+    clear: both;
 }
 
 .button-sign-in {
@@ -181,6 +156,11 @@ header {
 }
 
 /** Main **/
+
+.main-container {
+    margin: 0 auto;
+    width: 1130px;
+}
 
 .main-search {
     margin-top: 111px;
@@ -203,9 +183,8 @@ header {
     background-color: #757575;
     color: #757575;
     margin-right: 87px;
-    /* Цвет линии для IE6-7 */
     height: 1px;
-    width: 1060px;
+    width: 100%;
 }
 
 .main-caption {
@@ -237,10 +216,6 @@ header {
     display: inline-block;
 }
 
-.restaurants-block {
-    margin-left: 81px;
-}
-
 /** Footer **/
 
 footer {
@@ -250,7 +225,8 @@ footer {
 }
 
 .footer-container {
-    margin-left: 81px;
+    margin: 0 auto;
+    width: 1130px;
 }
 
 .footer-logo {
@@ -273,9 +249,8 @@ footer {
     border: none;
     background-color: #FFFFFF;
     color: #FFFFFF;
-    margin-right: 87px;
     height: 1px;
-    width: 1150px;
+    width: 100%;
 }
 
 footer select {
@@ -323,7 +298,6 @@ footer a:last-child { padding-bottom: 0; }
     margin-top: 39px;
 }
 
-/** TODO: Change border icon color **/
 footer i {
     color: #FFFFFF;
     margin-top: 20px;
@@ -335,9 +309,8 @@ footer i {
     background-color: #FFFFFF;
     color: #FFFFFF;
     margin-top: 48px;
-    margin-right: 87px;
     height: 1px;
-    width: 1150px;
+    width: 100%;
 }
 
 .mobile-app-block {
@@ -353,9 +326,8 @@ footer i {
     border: none;
     background-color: #FFFFFF;
     color: #FFFFFF;
-    margin-right: 87px;
     height: 1px;
-    width: 1150px;
+    width: 100%;
 }
 
 .bottom-link {
