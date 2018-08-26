@@ -189,7 +189,7 @@ header {
 }
 
 @media (max-width: 327px) {
-    .button-sign-in {
+    .button-register {
         width: 65px;
         font-size: 11px;
     }
