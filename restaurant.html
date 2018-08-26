@@ -47,17 +47,23 @@
     </header>
 
     <main>
-        <div class="row">
-            <div class="col-12">
-                <div class="slider">
-                    <div class="main-container">
-                        <div class="top-restaurant">
-                            <h1 class="top-restaurant__head">Трактир «Пушкин»</h1>
-                            <ul>
-                                <li>₽₽₽</li>
-                                <li>Европейская</li>
-                                <div class="top-restaurant__delivery">40-50 Min</div>
-                            </ul>
+        <div class="mobile-slider">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="slider">
+                        <div class="main-container">
+                            <div class="top-restaurant">
+                                <h1 class="top-restaurant__head">Трактир «Пушкин»</h1>
+                                <div class="top-restaraunt__unknown">
+                                    <ul>
+                                        <li>₽₽₽</li>
+                                        <li>Европейская</li>
+                                    </ul>
+                                    <div class="top-restaurant__delivery">
+                                        <p>40-50 Min</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -80,51 +86,52 @@
         <div class="main-container">
             <div class="main-content">
                 <p class="main-caption">Закуски</p>
+                <hr class="main-caption__underline" align="center">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-xs-12 col-lg-6">
                         <div class="catalog-dishes">
-                            <p>Сельдь на бородинском хлебе</p>
+                            <p class="catalog-dishes__name">Сельдь на бородинском хлебе</p>
                             <p id="dishes-description">С яйцом и огурцом</p>
                             <p class="catalog-dishes__price">240 ₽</p>
                             <img src="./images/z1.jpg">
                         </div>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-xs-12 col-lg-6">
                         <div class="catalog-dishes">
-                            <p>Соленья ассорти</p>
+                            <p class="catalog-dishes__name">Соленья ассорти</p>
                             <p class="catalog-dishes__price">320 ₽</p>
                             <img src="./images/z2.jpg">
                         </div>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-xs-12 col-lg-6">
                         <div class="catalog-dishes">
-                            <p>Грибы маринованные</p>
+                            <p class="catalog-dishes__name">Грибы маринованные</p>
                             <p class="catalog-dishes__price">300 ₽</p>
                             <img src="./images/z3.jpg">
                         </div>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-xs-12 col-lg-6">
                         <div class="catalog-dishes">
-                            <p>Сало домашнее с горчицей</p>
+                            <p class="catalog-dishes__name">Сало домашнее с горчицей</p>
                             <p class="catalog-dishes__price">320 ₽</p>
                             <img src="./images/z4.jpg">
                         </div>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-xs-12 col-lg-6">
                         <div class="catalog-dishes">
-                            <p>Малосольная семга</p>
+                            <p class="catalog-dishes__name">Малосольная семга</p>
                             <p class="catalog-dishes__price">390 ₽</p>
                             <img src="./images/z5.jpg">
                         </div>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-xs-12 col-lg-6">
                         <div class="catalog-dishes">
-                            <p>Язык говяжий с хреном</p>
+                            <p class="catalog-dishes__name">Язык говяжий с хреном</p>
                             <p class="catalog-dishes__price">350 ₽</p>
                             <img src="./images/z6.jpg">
                         </div>
@@ -136,32 +143,34 @@
         <footer>
             <div class="footer-container">
                 <div class="row">
-                    <div class="col-4 footer-logo">
+                    <div class="col-xs-12 col-lg-4 footer-logo">
                         <b class="footer-logo__uber">UBER</b>
                         <p class="footer-logo__eats">EATS</p>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-xs-12 col-lg-12">
                         <hr class="first-footer-hr" align="left">
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-xs-12 col-lg-4">
                         <div class="footer-first-block">
-                            <select class="footer-first-block_language">
+                            <select class="footer-first-block__language">
                                 <option>English</option>
                                 <option>Russian</option>
                             </select>
-                            <div class="footer-first-block_hashtag">
+                            <div class="footer-first-block__hashtag">
                                 <p>
                                     <span>#</span>UberEats</p>
                             </div>
-                            <i class="fab fa-facebook fa-lg"></i>
-                            <i class="fab fa-twitter fa-lg"></i>
-                            <i class="fab fa-instagram fa-lg"></i>
+                            <div class="social-icons">
+                                <i class="fab fa-facebook fa-lg"></i>
+                                <i class="fab fa-twitter fa-lg"></i>
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-xs-12 col-lg-4">
                         <div class="footer-second-block">
                             <a href="#">About UberEats</a>
                             <a href="#">Become a Delivery Partner</a>
@@ -169,7 +178,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-xs-12 col-lg-4">
                         <div class="footer-third-block">
                             <a href="#">See all cities</a>
                             <a href="#">Pricing</a>
@@ -179,11 +188,11 @@
                     </div>
                 </div>
 
-                <div class="col-12">
+                <div class="col-xs-12 col-lg-12">
                     <hr class="second-footer-hr" align="left">
                 </div>
 
-                <div class="col-4">
+                <div class="col-xs-12 col-lg-4">
                     <div class="mobile-app-block">
                         <a href="#">
                             <img src="./images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png">
@@ -194,22 +203,22 @@
                     </div>
                 </div>
 
-                <div class="col-12">
+                <div class="col-xs-12 col-lg-12">
                     <hr class="third-footer-hr" align="left">
                 </div>
 
                 <div class="row">
-                    <div class="col-4 bottom-link">
-                        <p>© 2017 Uber Technologies Inc.</p>
+                    <div class="col-xs-12 col-lg-4">
+                        <p class="bottom-link">© 2017 Uber Technologies Inc.</p>
                     </div>
-                    <div class="col-4 bottom-link">
-                        <p>Privacy</p>
+                    <div class="col-xs-12 col-lg-4">
+                        <p class="bottom-link">Privacy</p>
                     </div>
-                    <div class="col-4 bottom-link">
-                        <p>Terms</p>
+                    <div class="col-xs-12 col-lg-4">
+                        <p class="bottom-link">Terms</p>
                     </div>
                 </div>
-            </div>
+
             </div>
         </footer>
     </main>
