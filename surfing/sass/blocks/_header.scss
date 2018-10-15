@@ -1,0 +1,30 @@
+$font-pd: "Playfair Display", serif;
+
+header {
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 210px;
+}
+
+.header-title {
+  font-size: 70px;
+  font-family: $font-pd;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  line-height: 1.42;
+  letter-spacing: 0.5;
+  text-align: center;
+}
+
+.header-desc {
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  line-height: 1.875;
+  font-weight: 400;
+  letter-spacing: 0.06;
+
+  p {
+    text-align: center;
+  }
+}

@@ -1,0 +1,80 @@
+$font_lato: "Lato", sans-serif;
+$font-pd: "Playfair Display", serif;
+
+body {
+  font-family: $font_lato;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.center-wrapper {
+  text-align: center;
+  margin-bottom: 145px;
+}
+
+.main-content {
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content__title {
+  font-size: 51px;
+  font-weight: 400;
+  font-family: $font-pd;
+  color: rgb(0, 0, 0);
+  line-height: 2;
+  letter-spacing: 0.4px;
+  text-align: center;
+  margin-bottom: 95px;
+}
+
+.instructors-wrapper {
+  margin-bottom: 255px;
+}
+
+.instructors {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    margin-bottom: 30px;
+  }
+}
+
+.instructors-item__name {
+  font-size: 30px;
+  font-family: $font-pd;
+  color: rgb(0, 0, 0);
+  line-height: 2.931;
+  text-align: center;
+  letter-spacing: 0.28px;
+  margin-bottom: 10px;
+}
+
+.instructors-item__count {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(42, 183, 56);
+  text-align: center;
+  letter-spacing: 0.14px;
+}
+
+.enroll-now {
+  display: inline-block;
+  height: 50px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #41475b;
+  padding: 17px 45px 0;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}

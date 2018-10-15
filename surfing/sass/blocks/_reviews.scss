@@ -1,0 +1,125 @@
+$font-pd: "Playfair Display", serif;
+
+@mixin reviews-title {
+  font-size: 36px;
+  font-family: $font-pd;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  line-height: 2.7;
+  letter-spacing: 0.3;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 233px;
+}
+
+.reviews-recent {
+  width: 260px;
+  margin-right: 20px;
+}
+
+.reviews-recent__title {
+  @include reviews-title();
+  margin-bottom: 55px;
+}
+
+.reviews-recent__item {
+  position: relative;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e7e7e7;
+  z-index: 1;
+
+  &:before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -18px;
+    z-index: -3;
+    width: 36px;
+    height: 29px;
+    opacity: 0.1;
+    background-image: url("../img/quote.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews-recent__item-desc {
+  font-size: 16px;
+  font-style: italic;
+  color: rgb(153, 153, 153);
+  line-height: 1.938;
+  margin-bottom: 10px;
+}
+
+.reviews-recent__item-author {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 25px;
+
+  &:before {
+    content: "- ";
+  }
+}
+
+.reviews-main-video {
+  position: relative;
+}
+
+.reviews-main-video .play-video-icon {
+  position: absolute;
+  bottom: 32px;
+  left: 25px;
+}
+
+.reviews-user-videos__title {
+  @include reviews-title();
+  margin-bottom: 25px;
+}
+
+.reviews-user-videos {
+  width: 280px;
+}
+
+.play-video-icon {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background-color: #fff;
+  border-radius: 50px;
+
+  &:before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2.5px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 8px solid #000;
+    border-bottom: 5px solid transparent;
+  }
+}
+
+.reviews-user-videos__item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
+.reviews-user-videos__item .play-video-icon {
+  position: absolute;
+  bottom: -15px;
+  left: -10px;
+}

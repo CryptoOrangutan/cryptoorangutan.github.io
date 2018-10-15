@@ -1,0 +1,43 @@
+$font-pd: "Playfair Display", serif;
+
+footer {
+  border: 1px solid #f2ede7;
+  padding-top: 48px;
+  padding-bottom: 38px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-info__title {
+  font-size: 24px;
+  line-height: 1;
+  color: #000000;
+  font-weight: 400;
+  font-family: $font-pd;
+  margin-bottom: 5px;
+}
+
+.footer-info__copyright {
+  color: #9f9f9f;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.footer__designed {
+  color: #9f9f9f;
+  font-size: 14px;
+  line-height: 2.5;
+  font-weight: 400;
+
+  span {
+    color: #000000;
+    font-weight: 500;
+  }
+}
